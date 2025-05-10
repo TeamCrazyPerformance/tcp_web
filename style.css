@@ -208,3 +208,119 @@ footer {
     padding: 3rem 1rem;
   }
 }
+
+.about-section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-block {
+  margin-bottom: 4rem;
+}
+
+.about-block h3 {
+  font-size: 1.8rem;
+  color: #00ffd5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-block p, .about-block ul li {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.about-block ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  .about-block h3 {
+    font-size: 1.5rem;
+  }
+  .about-block p, .about-block ul li {
+    font-size: 1rem;
+  }
+}
+
+/* ...기존 스타일 생략... */
+
+/* 운영진 카드 섹션 */
+.operator-section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.operator-section h2 {
+  font-size: 1.5rem;
+  color: #00ffd5;
+  margin-bottom: 0.5rem;
+}
+
+.operator-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.operator-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.operator-card {
+  background-color: #1c1c1c;
+  border-radius: 1rem;
+  width: 220px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,255,213,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.operator-card:hover {
+  transform: translateY(-5px);
+}
+
+.operator-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.operator-name {
+  font-size: 1.2rem;
+  color: #00ffd5;
+  margin-bottom: 0.5rem;
+}
+
+.operator-role {
+  color: #bbb;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.operator-msg {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .operator-card {
+    width: 90%;
+  }
+  .operator-section h1 {
+    font-size: 2rem;
+  }
+}
